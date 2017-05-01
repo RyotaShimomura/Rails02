@@ -21,5 +21,6 @@ group :development do
   gem 'spring-watcher-listen', '2.0.0'
 end
 
-# Windows環境ではtzinfo-dataというgemを含める必要があります
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+group :production do
+  gem 'pg', '0.18.4'
+end
